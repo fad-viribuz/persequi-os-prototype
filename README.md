@@ -1,1 +1,1 @@
-# persequi-os-prototype
+# Intial update for Persequi OS
