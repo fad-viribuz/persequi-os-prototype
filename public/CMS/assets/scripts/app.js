@@ -76,8 +76,8 @@ $(document).ready(function() {
                 <a href="/CMS/forms/index.html">
                     <img src="/CMS/assets/images/crm-main-menu/6.png">
                 </a>
-                <a href="#">
-                    <img src="/CMS/assets/images/crm-main-menu/7.png">
+                <a href="/CMS/tag/index.html">
+                    <img src="/CMS/assets/images/tag/${page == "tag" ? "menu-active" : "menu"}.png">
                 </a>
             `);
         },
@@ -395,6 +395,47 @@ $(document).ready(function() {
                         <ul>
                             <li>
                                 <a href="/CMS/scheduling/crm-main-menu.html"><span class="iconify" data-icon="dashicons:admin-home"></span> main menu</a>
+                            </li>
+                            <li>
+                                <a href="/CMS/forms/index.html"><span class="iconify" data-icon="fluent:calendar-search-16-filled"></span> Forms</a>
+                            </li>
+                            <li>
+                                <a href="/CMS/pipeline/opportunities.html"><span class="iconify" data-icon="ant-design:database-filled"></span> opportunities</a>
+                            </li>
+                            <li>
+                                <a href="/CMS/pipeline/workflows.html"><span class="iconify" data-icon="octicon:workflow-24"></span>workflows</a>
+                            </li>
+                            <li>
+                                <a href="/CMS/pipeline/trigger.html"><span class="iconify" data-icon="mdi:connection"></span>triggers</a>
+                            </li>
+                            <li class="mb-5 pb-5">
+                                <a href="#"><span class="iconify" data-icon="healthicons:health-worker-form-outline"></span>forms/survey</a>
+                            </li>
+                            <li class="logout-menu">
+                                <a href="/CMS/login.html"><span class="iconify" data-icon="oi:account-logout"></span>logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                `);
+            }
+            if (page == "tag") {
+                $('sidebar').html(`
+                    <div class="sidebar-container">
+                    <div class="close-sidebar">
+                        <div class="pt-3 p-2 mb-3">
+                            <a href="#" id="close-sidebar">
+                                <img src="/CMS/assets/images/sidebar/close-menu.png" alt="">
+                            </a>
+                        </div>
+                        <div class="text-center text-white">
+                            <img src="/CMS/assets/images/sidebar/avatar.png" alt="">
+                            <h3 class="mt-3"><b>JJ Morris</b></h3>
+                            <p>NEC FORMULA CAMPAIGN</p>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="/CMS/tag/crm-main-menu.html"><span class="iconify" data-icon="dashicons:admin-home"></span> main menu</a>
                             </li>
                             <li>
                                 <a href="/CMS/forms/index.html"><span class="iconify" data-icon="fluent:calendar-search-16-filled"></span> Forms</a>
