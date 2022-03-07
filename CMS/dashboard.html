@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM Main Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="assets/app.css" />
+</head>
+
+<body style="background:#E6E5E7;">
+    <div class="mobile">
+        <header class="container crm-header">
+            <div class="d-flex pt-3">
+                <div class="col-sm-6" id="open-sidebar">
+                    <a href="#">
+                        <img src="/CMS/assets/images/sidebar/menu-toggle.png">
+                    </a>
+                </div>
+                <div class="col-sm-6 text-right pt-2">
+                    <a href="#" id="show-notification">
+                        <img src="/CMS/assets/images/crm-main-menu/bell.png">
+                    </a>
+                </div>
+            </div>
+            <div class="text-center py-2 text-white pt-4">
+                <h3><b> Good Morning, JJ</b></h3>
+                <p>NEC FORMULA CAMPAIGN</p>
+            </div>
+            <div class="content-crm">
+                <div class="mt-3 text-center">
+                    <img src="/CMS/assets/images/dashboard/line-chart.png">
+                </div>
+                <div class="slide-carousel owl-theme">
+                    <div class="d-flex px-3 mt-2">
+                        <div class="col-lg-6 text-center">
+                            <p class="bold mb-0 text-white">Record Count</p>
+                            <h3 class="text-yellow"><b class="random-number">201</b></h3>
+                        </div>
+                        <div class="col-sm-6 text-center">
+                            <p class="bold mb-0 text-white">Record Count</p>
+                            <h3 class="text-yellow"><b class="random-number">201</b></h3>
+                        </div>
+                    </div>
+                    <div class="d-flex px-4 crm-statistic">
+                        <div class="col-lg-6 text-center text-white py-2" style="
+                            background-image: url(/CMS/assets/images/dashboard/1.png);
+                            width:50%;
+                            ">
+                            <p class="bold text-yellow mb-2">Leads</p>
+                            <h3 class="text-white bold random-number">221</h3>
+                            <small>Cost / Lead: 0</small>
+                        </div>
+                        <div class="col-lg-6 text-center text-white py-2" style="
+                        background-image: url(/CMS/assets/images/dashboard/2.png);
+                        width: 50%;
+                        ">
+                            <p class="bold text-yellow mb-2">Retainers</p>
+                            <h3 class="text-white bold random-number">25</h3>
+                        </div>
+                        <div class="col-lg-6 text-center text-white" style="
+                            background-image: url(/CMS/assets/images/dashboard/3.png);
+                            width:50%;
+                            ">
+                            <h3 class="text-white bold mt-2 random-number">2</h3>
+                        </div>
+                        <div class="col-lg-6 text-center text-white py-2" style="
+                        background-image: url(/CMS/assets/images/dashboard/4.png);
+                        width: 50%;
+                        ">
+                            <h3 class="text-white bold mt-2 random-number">1</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="drawer-menu mt-5">
+                    <img src="/CMS/assets/images/drawer.png" class="w-100">
+                </div>
+            </div>
+        </header>
+        <sidebar>
+        </sidebar>
+        <section id="notification">
+            <a href="#" id="close-notification">
+                <img src="/CMS/assets/images/sidebar/close-menu.png" alt="">
+            </a>
+        </section>
+        <div class="next-dash">
+            <a href="/CMS/second-dashboard.html"><span class="iconify" data-icon="ooui:previous-rtl"></span></a>
+        </div>
+    </div>
+    <script>
+        let page = 'dashboard';
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/CMS/assets/scripts/app.js"></script>
+</body>
+
+</html>

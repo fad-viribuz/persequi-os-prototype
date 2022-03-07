@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.text-yellow {
+    color: #D9F04D;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .text-pink {
@@ -22,9 +32,40 @@ body {
 }
 
 .__persequi-menu-bg {
-    width: 100;
+    width: 100%;
     background: url(/CMS/assets/images/main-menu/bg.png) no-repeat;
     background-size: cover;
+    height: 100vh;
+}
+
+.crm-header {
+    height: 60vh;
+    background: linear-gradient(180deg, #DF00FF 0%, #DF00FF 0.01%, #1C0029 36.98%);
+    position: relative;
+}
+
+.crm-statistic {
+    flex-wrap: wrap;
+}
+
+.crm-statistic>div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px !important;
+    margin-top: 0px;
+}
+
+.content-crm {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    bottom: -20px;
+    top: 155px;
 }
 
 sidebar {
@@ -34,7 +75,7 @@ sidebar {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 99;
     padding-top: 20px;
     padding-left: 20px;
     background: #313131d6;
@@ -93,6 +134,136 @@ sidebar ul a svg {
 }
 
 .mobile {
+    display: none;
+}
+
+#notification {
+    background-image: url(/CMS/assets/images/notification.png);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    background-size: cover;
+    display: none;
+}
+
+#notification a {
+    position: absolute;
+    top: 30px;
+    left: 15px;
+}
+
+.header-menu-toggle {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.next-dash {
+    position: absolute;
+    top: 40%;
+    right: 15px;
+    z-index: 9;
+}
+
+.prev-dash {
+    position: fixed;
+    top: 40%;
+    left: 15px;
+    z-index: 9;
+}
+
+.next-dash a,
+.prev-dash a {
+    font-size: 30px;
+}
+
+ul#leads-tab li {
+    font-size: 12px;
+}
+
+ul#leads-tab li a.active {
+    background-color: #D700FA !important;
+}
+
+ul#leads-tab li a {
+    color: white;
+    padding: 8px 15px;
+}
+
+ul#leads-tab {
+    justify-content: center;
+}
+
+ul#leads-tab>li:nth-child(1) {
+    background: #831F93;
+}
+
+ul#leads-tab>li:nth-child(2) {
+    background: #750088;
+}
+
+ul#leads-tab>li:nth-child(3) {
+    background: #540661;
+}
+
+ul#leads-tab>li:nth-child(4) {
+    background: #41004B;
+}
+
+ul#leads-tab>li:nth-child(5) {
+    background: #33023A;
+}
+
+.workflow-bg {
+    background-image: url(/CMS/assets/images/workflows/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.create-workflow-nav {
+    position: absolute;
+    top: 45px;
+    padding: 0px 20px;
+}
+
+.funnel-list-link {
+    position: absolute;
+    top: 300px;
+    padding: 0px 20px;
+    left: 0;
+    right: 0;
+}
+
+.funnel-content {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+}
+
+.form-list-link {
+    position: absolute;
+    top: 85px;
+    left: 0;
+    right: 0;
+}
+
+.form-list-link img {
+    padding: 35px;
+}
+
+.funnel-content-options {
+    margin-top: -1px;
+}
+
+.modal-funnel {
+    position: fixed;
+    top: 0;
     display: none;
 }
 

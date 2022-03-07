@@ -5,57 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRM Main Menu</title>
+    <title>Pipeline | Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="assets/app.css" />
+    <link rel="stylesheet" href="../assets/app.css" />
 </head>
 
-<body>
+<body style="background:#E6E5E7;">
     <div class="mobile">
-        <header class="container">
-            <div class="d-flex pt-3">
-                <div class="col-sm-6" id="open-sidebar">
-                    <a href="#">
-                        <img src="/CMS/assets/images/sidebar/menu-toggle.png">
-                    </a>
-                </div>
-                <div class="col-sm-6 text-right pt-2">
-                    <a href="#" id="show-notification">
-                        <img src="/CMS/assets/images/crm-main-menu/bell.png">
-                    </a>
-                </div>
+        <div class="d-flex pt-3 header-menu-toggle">
+            <div class="col-sm-6" id="open-sidebar">
+                <a href="#">
+                    <img src="/CMS/assets/images/sidebar/menu-toggle.png">
+                </a>
             </div>
-        </header>
+            <div class="col-sm-6 text-right pt-2">
+                <a href="#" id="show-notification">
+                    <img src="/CMS/assets/images/crm-main-menu/bell.png">
+                </a>
+            </div>
+        </div>
         <sidebar>
+
         </sidebar>
         <section id="notification">
             <a href="#" id="close-notification">
                 <img src="/CMS/assets/images/sidebar/close-menu.png" alt="">
             </a>
         </section>
-        <div class="__persequi-menu-bg" style="position:relative;">
-            <div class="text-center pt-5">
-                <img src="/CMS/assets/images/logo.png" style="width: 200px;">
-                <div class="mt-2 px-4">
-                    <h4><strong>Customer Relations Management</strong></h3>
-                </div>
-                <div id="crm-main-menu" class="mt-5 main-menu text-center">
-
-                </div>
-            </div>
-            <div class="drawer-menu mt-5">
-                <img src="/CMS/assets/images/drawer.png" class="w-100">
-            </div>
+        <div class="next-dash">
+            <a href="/CMS/pipeline/pipeline-dashboard-2.html"><span class="iconify" data-icon="ooui:next-ltr"></span></a>
         </div>
+        <section>
+            <div>
+                <img src="/CMS/assets/images/dashboard/pipeline.png" class="w-100">
+            </div>
+        </section>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        let page = 'dashboard';
+        let page = 'pipeline';
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/CMS/assets/scripts/app.js"></script>
 </body>
 
